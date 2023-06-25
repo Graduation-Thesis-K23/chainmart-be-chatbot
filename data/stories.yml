@@ -1,50 +1,13 @@
-version: "3.1"
+version: '3.1'
 
 stories:
-- story: Greet and goodbye
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: greet
-  - action: utter_greet
-  - intent: greet
-  - action: utter_greet
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-
-- story: Product inquiry and details
-  steps:
-  - intent: product_inquiry
-  - action: utter_product_inquiry
-  - intent: product_details
-  - action: utter_product_details
+    - story: Quá trình chính - Tra cứu trạng thái đơn hàng
+      steps:
+          - intent: chao_hoi
+          - action: utter_chao_hoi
+          - intent: hoi_trang_thai_don_hang
+          - action: utter_cung_cap_so_don_hang
+          - intent: cung_cap_so_don_hang
+          - action: action_tra_cuu_trang_thai_don_hang
+          - intent: cam_on
+          - action: utter_cau_cam_on

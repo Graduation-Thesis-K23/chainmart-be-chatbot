@@ -1,28 +1,22 @@
-version: "3.1"
+version: '3.1'
 
 rules:
+    - rule: Chào hỏi
+      steps:
+          - intent: chao_hoi
+          - action: utter_chao_hoi
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - rule: Hỏi trạng thái đơn hàng
+      steps:
+          - intent: hoi_trang_thai_don_hang
+          - action: utter_cung_cap_so_don_hang
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - rule: Cung cấp số đơn hàng
+      steps:
+          - intent: cung_cap_so_don_hang
+          - action: action_tra_cuu_trang_thai_don_hang
 
-- rule: Product inquiry rule
-  steps:
-  - intent: product_inquiry
-  - action: utter_product_inquiry
-
-- rule: Product details rule
-  steps:
-  - intent: product_details
-  - action: utter_product_details
-
-- rule: Product code rule
-  steps:
-  - intent: product_code
-  - action: utter_product_code
+    - rule: Cảm ơn
+      steps:
+          - intent: cam_on
+          - action: utter_cau_cam_on

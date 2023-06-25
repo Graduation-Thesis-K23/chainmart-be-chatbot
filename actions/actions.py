@@ -28,15 +28,14 @@ class ActionProductDetails(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        
         # get so_don_hang
         so_don_hang = tracker.get_slot("so_don_hang")
         sender_id = tracker.sender_id
 
-
-        print(sender_id)
-        print(so_don_hang)
-        
-        dispatcher.utter_message(text="Đơn hàng của bạn đang được vận chuyển 1 2")
+        dispatcher.utter_message(
+            text=f"Đơn hàng {so_don_hang} của {sender_id} đang được vận chuyển.".format(
+                so_don_hang, sender_id
+            )
+        )
 
         return []

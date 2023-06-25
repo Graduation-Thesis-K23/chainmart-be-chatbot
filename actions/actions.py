@@ -20,7 +20,7 @@ class ActionHelloWorld(Action):
 
 class ActionProductDetails(Action):
     def name(self) -> Text:
-        return "action_product_details"
+        return "action_tra_cuu_trang_thai_don_hang"
 
     def run(
         self,
@@ -28,19 +28,15 @@ class ActionProductDetails(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        product_code = next(tracker.get_latest_entity_values("product_code"), None)
+        
+        # get so_don_hang
+        so_don_hang = tracker.get_slot("so_don_hang")
+        sender_id = tracker.sender_id
 
-        response = ""
 
-        if product_code:
-            product_info = "-Thông tin sản phẩm-"
-
-            response = (
-                f"Mã sản phẩm: {product_code}. Thông tin chi tiết: {product_info}"
-            )
-        else:
-            response = "Xin lỗi, tôi không nhận diện được mã sản phẩm."
-
-        dispatcher.utter_message(text=response)
+        print(sender_id)
+        print(so_don_hang)
+        
+        dispatcher.utter_message(text="Đơn hàng của bạn đang được vận chuyển 1 2")
 
         return []

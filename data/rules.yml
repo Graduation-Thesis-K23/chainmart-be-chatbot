@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Product inquiry rule
+  steps:
+  - intent: product_inquiry
+  - action: utter_product_inquiry
+
+- rule: Product details rule
+  steps:
+  - intent: product_details
+  - action: utter_product_details
+
+- rule: Product code rule
+  steps:
+  - intent: product_code
+  - action: utter_product_code

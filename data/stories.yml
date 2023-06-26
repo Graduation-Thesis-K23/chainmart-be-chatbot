@@ -1,6 +1,24 @@
 version: '3.1'
 
 stories:
+    - story: Quá trình tìm kiếm sản phẩm
+      steps:
+          - intent: chao_hoi
+          - action: utter_chao_hoi
+          - intent: muon_mua_hang
+          - action: utter_muon_mua_hang
+          - intent: cung_cap_ten_san_pham
+          - action: action_cung_cap_ten_san_pham
+
+    - story: Process of finding products
+      steps:
+          - intent: hello
+          - action: utter_hello
+          - intent: want_to_buy
+          - action: utter_want_to_buy
+          - intent: provide_product_name
+          - action: action_provide_product_name
+
     - story: Quá trình chính - Tra cứu trạng thái đơn hàng
       steps:
           - intent: chao_hoi

@@ -41,6 +41,80 @@ orders = [
 ]
 
 
+class CungCapTenSanPham(Action):
+    def name(self) -> Text:
+        return "action_cung_cap_ten_san_pham"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        # get so_don_hang
+        ten_san_pham = tracker.get_slot("ten_san_pham")
+        # get name in products like %ten_san_pham%
+
+        result = None
+        for product in products:
+            if ten_san_pham in product["name"]:
+                result = product
+                break
+
+        if result is None:
+            dispatcher.utter_message(
+                text=f"Không tìm thấy sản phẩm {ten_san_pham}".format(ten_san_pham)
+            )
+        else:
+            product_name = result.get("name")
+            product_price = result.get("price")
+            product_link = result.get("url")
+
+            dispatcher.utter_message(
+                text=f"Sản phẩm {product_name} có giá {product_price} VNĐ.\n Link: {product_link}".format(
+                    product_name, product_price, product_link
+                )
+            )
+
+        return []
+
+
+class CungCapTenSanPham(Action):
+    def name(self) -> Text:
+        return "action_provide_product_name"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+        # get so_don_hang
+        ten_san_pham = tracker.get_slot("ten_san_pham")
+        # get name in products like %ten_san_pham%
+
+        result = None
+        for product in products:
+            if ten_san_pham in product["name"]:
+                result = product
+                break
+
+        if result is None:
+            dispatcher.utter_message(
+                text=f"{ten_san_pham} not found".format(ten_san_pham)
+            )
+        else:
+            dispatcher.utter_message(
+                text=f"{product_name} have price {product_price} VNĐ.\n Link: {product_link}".format(
+                    product_name=result.get("name"),
+                    product_price=result.get("price"),
+                    product_link=result.get("url"),
+                )
+            )
+
+        return []
+
+
 class ActionProductDetails(Action):
     def name(self) -> Text:
         return "action_tra_cuu_trang_thai_don_hang"

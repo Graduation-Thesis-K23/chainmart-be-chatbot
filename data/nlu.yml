@@ -5,6 +5,74 @@ nlu:
           - Xin chào
           - Hi
           - Chào bạn
+          - Chào
+          - Chào bạn
+
+    - intent: hello
+      examples: |
+          - Hello
+          - Hi
+          - Hey
+          - morning
+          - good morning
+          - good afternoon
+          - good evening
+
+    - intent: muon_mua_hang
+      examples: |
+          - mua hàng
+          - tối muốn mua hàng
+          - tôi muốn mua nước uống
+          - tôi muốn mua đồ ăn
+          - tôi muốn mua đồ uống
+          - tôi muốn mua đồ ăn uống
+          - mua đồ ăn
+          - mua đồ uống
+          - mua đồ ăn uống
+
+    - intent: want_to_buy
+      examples: |
+          - I want to buy product
+          - I want to buy food
+          - I want to buy drink
+          - I want to buy food and drink
+          - buy food
+          - buy drink
+          - buy food and drink
+
+    - intent: cung_cap_ten_san_pham
+      examples: |
+          - tôi muốn mua [coca](ten_san_pham)
+          - tôi muốn mua [pepsi](ten_san_pham)
+          - tôi muốn mua [thịt heo](ten_san_pham)
+          - tôi muốn mua [thịt cừu](ten_san_pham)
+          - tôi muốn mua [nước mắm](ten_san_pham)
+          - tôi muốn mua [kem](ten_san_pham)
+          - tôi muốn mua [mì gói](ten_san_pham)
+          - mua [coca](ten_san_pham)
+          - mua [pepsi](ten_san_pham)
+          - mua [thịt heo](ten_san_pham)
+          - mua [thịt cừu](ten_san_pham)
+          - mua [nước mắm](ten_san_pham)
+          - mua [kem](ten_san_pham)
+          - mua [mì gói](ten_san_pham)
+
+    - intent: provide_product_name
+      examples: |
+          - [coca](ten_san_pham)
+          - [pepsi](ten_san_pham)
+          - [pork](ten_san_pham)
+          - [lamb](ten_san_pham)
+          - [fish sauce](ten_san_pham)
+          - [ice cream](ten_san_pham)
+          - [instant noodles](ten_san_pham)
+          - buy [coca](ten_san_pham)
+          - buy [pepsi](ten_san_pham)
+          - buy [pork](ten_san_pham)
+          - buy [lamb](ten_san_pham)
+          - buy [fish sauce](ten_san_pham)
+          - buy [ice cream](ten_san_pham)
+          - buy [instant noodles](ten_san_pham)
 
     - intent: hoi_trang_thai_don_hang
       examples: |

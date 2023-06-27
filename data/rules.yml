@@ -1,47 +1,32 @@
-version: '3.1'
+version: "3.1"
 
 rules:
-    - rule: Chào hỏi
-      steps:
-          - intent: chao_hoi
-          - action: utter_chao_hoi
+  - rule: Chào hỏi
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
 
-    - rule: Hello
-      steps:
-          - intent: hello
-          - action: utter_hello
+  - rule: Hello
+    steps:
+      - intent: hello
+      - action: utter_hello
 
-    - rule: Muốn mua hàng
-      steps:
-          - intent: muon_mua_hang
-          - action: utter_muon_mua_hang
+  - rule: Muốn mua hàng
+    steps:
+      - intent: muon_mua_hang
+      - action: utter_muon_mua_hang
 
-    - rule: want to buy
-      steps:
-          - intent: want_to_buy
-          - action: utter_want_to_buy
+  - rule: want to buy
+    steps:
+      - intent: want_to_buy
+      - action: utter_want_to_buy
 
-    - rule: Cung cấp tên sản phẩm
-      steps:
-          - intent: cung_cap_ten_san_pham
-          - action: action_cung_cap_ten_san_pham
+  - rule: Cung cấp tên sản phẩm
+    steps:
+      - intent: cung_cap_ten_san_pham
+      - action: action_cung_cap_ten_san_pham
 
-    - rule: Provide product name
-      steps:
-          - intent: provide_product_name
-          - action: action_provide_product_name
-
-    - rule: Hỏi trạng thái đơn hàng
-      steps:
-          - intent: hoi_trang_thai_don_hang
-          - action: utter_cung_cap_so_don_hang
-
-    - rule: Cung cấp số đơn hàng
-      steps:
-          - intent: cung_cap_so_don_hang
-          - action: action_tra_cuu_trang_thai_don_hang
-
-    - rule: Cảm ơn
-      steps:
-          - intent: cam_on
-          - action: utter_cau_cam_on
+  - rule: Provide product name
+    steps:
+      - intent: provide_product_name
+      - action: action_provide_product_name

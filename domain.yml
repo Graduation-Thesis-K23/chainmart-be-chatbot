@@ -1,92 +1,66 @@
-version: '3.1'
+version: "3.1"
 intents:
-    - cam_on
-    - chao_hoi
-    - hello
+  - cam_on
+  - chao_hoi
+  - hello
 
-    - muon_mua_hang
-    - cung_cap_ten_san_pham
-    - want_to_buy
-    - provide_product_name
-
-    - cung_cap_so_don_hang
-    - tra_cuu_trang_thai_don_hang
-    - xu_ly_don_hang_chua_nhan
-    - don_hang_bi_cham
-    - hoi_trang_thai_don_hang
-    - huy_don_hang
-    - khong_nhan_don_hang
-    - tam_biet
-    - thay_doi_don_hang
+  - muon_mua_hang:
+      ignore_entities:
+        - ten_san_pham
+  - cung_cap_ten_san_pham:
+      use_entities:
+        - ten_san_pham
+  - want_to_buy:
+      ignore_entities:
+        - ten_san_pham
+  - provide_product_name:
+      use_entities:
+        - ten_san_pham
 
 entities:
-    - so_don_hang
-    - ten_san_pham
+  - so_don_hang
+  - ten_san_pham
 
 slots:
-    so_don_hang:
-        type: text
-        influence_conversation: true
-        mappings:
-            - type: from_entity
-              entity: so_don_hang
-    ten_san_pham:
-        type: text
-        influence_conversation: true
-        mappings:
-            - type: from_entity
-              entity: ten_san_pham
+  so_don_hang:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: so_don_hang
+
+  ten_san_pham:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ten_san_pham
 
 responses:
-    utter_chao_hoi:
-        - text: Xin chào! Bạn cần tôi giúp gì hôm nay?
-    utter_hello:
-        - text: Hello! How can I help you today?
-    utter_muon_mua_hang:
-        - text: Bạn muốn mua hàng à? Vui lòng cung cấp tên sản phẩm bạn muốn mua.
-    utter_want_to_buy:
-        - text: You want to buy something? Please provide the name of the product you want to buy.
-    utter_cung_cap_ten_san_pham:
-        - text: Vui lòng cung cấp tên sản phẩm bạn muốn mua.
-    utter_provide_product_name:
-        - text: Please provide the name of the product you want to buy.
-    utter_cung_cap_so_don_hang:
-        - text: Xin vui lòng cung cấp số đơn hàng của bạn.
-    utter_tra_cuu_trang_thai_don_hang:
-        - text: Trạng thái đơn hàng {so_don_hang} của bạn là đang giao.
-    utter_xu_ly_don_hang_chua_nhan:
-        - text: Xin lỗi vì bạn chưa nhận được đơn hàng. Chúng tôi sẽ kiểm tra và phản hồi lại cho bạn.
-    utter_xu_ly_don_hang_bi_cham:
-        - text: Chúng tôi xin lỗi vì sự chậm trễ trong giao hàng. Chúng tôi đang cố gắng giải quyết vấn đề này trong thời gian sớm nhất.
-    utter_huy_don_hang:
-        - text: Được, chúng tôi sẽ hủy đơn hàng {so_don_hang} của bạn. Bạn sẽ nhận được email xác nhận trong thời gian ngắn.
-    utter_thay_doi_don_hang:
-        - text: Để thay đổi đơn hàng của bạn, vui lòng liên hệ với đội ngũ chăm sóc khách hàng của chúng tôi qua số điện thoại.
-    utter_cau_cam_on:
-        - text: Không có gì! Nếu bạn có câu hỏi khác, hãy đặt tiếp.
-    utter_hoi_trang_thai_don_hang:
-        - text: Gửi số đơn hàng của bạn, chúng tôi sẽ kiểm tra trạng thái đơn hàng và phản hồi lại cho bạn.
-    utter_tam_biet:
-        - text: Tạm biệt! Chúc bạn một ngày tốt lành!
-    utter_khong_nhan_don_hang:
-        - text: Xin lỗi vì bạn chưa nhận được đơn hàng. Chúng tôi sẽ kiểm tra và phản hồi lại cho bạn.
-    utter_cam_on:
-        - text: Không có gì! Nếu bạn có câu hỏi khác, hãy đặt tiếp.
-    utter_default:
-        - text: Xin lỗi, tôi không hiểu ý bạn. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
+  utter_chao_hoi:
+    - text: Xin chào! Bạn cần tôi giúp gì hôm nay?
+  utter_hello:
+    - text: Hello! How can I help you today?
+
+  utter_muon_mua_hang:
+    - text: Bạn muốn mua hàng à? Vui lòng cung cấp tên sản phẩm bạn muốn mua.
+  utter_want_to_buy:
+    - text: You want to buy something? Please provide the name of the product you want to buy.
+
+  utter_cung_cap_ten_san_pham:
+    - text: Vui lòng cung cấp tên sản phẩm bạn muốn mua.
+  utter_provide_product_name:
+    - text: Please provide the name of the product you want to buy.
+
+  utter_mac_dinh:
+    - text: Xin lỗi, tôi không hiểu ý bạn. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
+  utter_default:
+    - text: Sorry, I don't understand you. We will contact you as soon as possible.
+
 actions:
-    - action_muon_mua_hang
-    - action_cung_cap_ten_san_pham
-    - action_provide_product_name
-    - action_xu_ly_don_hang_chua_nhan
-    - action_tra_cuu_trang_thai_don_hang
-    - action_chao_hoi
-    - action_xu_ly_don_hang_bi_cham
-    - action_huy_don_hang
-    - action_thay_doi_don_hang
-    - action_cung_cap_so_don_hang
-    - action_cau_cam_on
-    - action_tam_biet
+  - action_cung_cap_ten_san_pham
+  - action_provide_product_name
+
 session_config:
-    session_expiration_time: 60
-    carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

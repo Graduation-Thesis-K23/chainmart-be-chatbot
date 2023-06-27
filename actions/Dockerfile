@@ -19,5 +19,3 @@ COPY . /app/actions
 # By best practices, don't run the code with root user
 USER 1001
 
-# start app
-# RUN ["python", "-m", "rasa_sdk", "--actions", "actions", "--port", "5055"]

@@ -50,7 +50,6 @@ secrets.tar
 test_download.zip
 bower_components/
 build/lib/
-/models/
 node_modules/
 npm-debug.log
 examples/moodbot/py3/
@@ -63,9 +62,7 @@ story_graph.dot
 debug.md
 examples/moodbot/*.png
 examples/moodbot/errors.json
-examples/formbot/models*
-examples/concertbot/models*
-examples/moodbot/models*
+
 examples/e2ebot/results/*
 failed_stories.md
 errors.json

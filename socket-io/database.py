@@ -53,3 +53,4 @@ class Database:
             self.conn = None
         else:
             print("Connection is already closed")
+        print("Connection closed")

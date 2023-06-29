@@ -34,37 +34,90 @@ def executeQuery(query):
 
 
 def processMessage(text):
-    action, text = text.split("|")
+    actions = text.split("|")
+    action = actions[0]
+    keyword = actions[1]
     if action == "action_cung_cap_ten_san_pham":
         # get product name with `text`
-        query = (
-            "select * from products where lower(name) like lower('%{text}%') limit 5".format(
-                text=text
-            )
+        query = f"select name,price,slug from products where lower(name) like lower('%{keyword}%') limit 5;".format(
+            keyword=keyword
         )
 
-        return executeQuery(query)
+        print(query)
+
+        result = executeQuery(query)
+
+        if result is None:
+            return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
+
+        result_nraw = []
+        for r in result:
+            result_nraw.append(
+                "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+            )
+
+        return result_nraw
+
     if action == "action_cung_cap_sdt_tra_cuu_don_hang":
         # get order with `text`
-        query = "select * from orders where phone_number = '{text}' limit 5".format(text=text)
+        query = f"select id,user_id,status from orders limit 5;".format(
+            keyword=keyword
+        )
 
-        return executeQuery(query)
+        result = executeQuery(query)
+
+        if result is None:
+            return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
+
+        result_nraw = []
+        for r in result:
+            result_nraw.append(
+                "Đơn hàng {id} được đặt bởi {phone} có trạng thái là {status}.".format(
+                    id=r[0], phone=r[1], status=r[2]
+                )
+            )
+
+        return result_nraw
 
     if action == "action_provide_product_name":
         # get product name with `text`
-        query = (
-            "select * from products where lower(name) like lower('%{text}%' limit 5)".format(
-                text=text
-            )
+        query = f"select name,price,slug from products where lower(name) like lower('%{keyword}%') limit 5;".format(
+            keyword=keyword
         )
 
-        return executeQuery(query)
+        result = executeQuery(query)
+
+        if result is None:
+            return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
+
+        result_nraw = []
+        for r in result:
+            result_nraw.append(
+                "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+            )
+
+        return result
 
     if action == "action_provide_phone_number_to_check_order":
         # get order with `text`
-        query = "select * from orders where phone_number = '{text}' limit 5".format(text=text)
+        query = f"select id,user_id,status from orders limit 5;".format(
+            keyword=keyword
+        )
 
-        return executeQuery(query)
+        result = executeQuery(query)
+
+        if result is None:
+            return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
+
+        result_nraw = []
+        for r in result:
+            result_nraw.append(
+                "Đơn hàng {id} được đặt bởi {phone} có trạng thái là {status}.".format(
+                    id=r[0], phone=r[1], status=r[2]
+                )
+            )
+
+        return result_nraw
 
 
 @sio.event

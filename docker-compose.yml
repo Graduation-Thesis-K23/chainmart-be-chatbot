@@ -4,6 +4,8 @@ services:
     build: .
     networks:
       - rasa-network
+    depends_on:
+      - action_server
 
   action_server:
     build: ./actions
@@ -16,6 +18,8 @@ services:
       - 5000:5000
     networks:
       - rasa-network
+    depends_on:
+      - rasa
 
 networks:
   rasa-network:

@@ -10,7 +10,7 @@ messages = [
     "action_provide_phone_number_to_check_order",
 ]
 
-sio = socketio.AsyncServer()
+sio = socketio.AsyncServer(cors_allowed_origins="*")
 app = web.Application()
 sio.attach(app)
 
@@ -60,9 +60,7 @@ def processMessage(text):
 
     if action == "action_cung_cap_sdt_tra_cuu_don_hang":
         # get order with `text`
-        query = f"select id,user_id,status from orders limit 5;".format(
-            keyword=keyword
-        )
+        query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
 
         result = executeQuery(query)
 
@@ -100,9 +98,7 @@ def processMessage(text):
 
     if action == "action_provide_phone_number_to_check_order":
         # get order with `text`
-        query = f"select id,user_id,status from orders limit 5;".format(
-            keyword=keyword
-        )
+        query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
 
         result = executeQuery(query)
 

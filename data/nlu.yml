@@ -7,6 +7,7 @@ nlu:
       - Chào bạn
       - Chào
       - Chào bạn
+      - Chào bạn, tôi cần một số trợ giúp
 
   - intent: hello
     examples: |
@@ -19,6 +20,47 @@ nlu:
       - good evening
       - what's up
       - whats up
+      - Hi there
+
+  - intent: tam_biet
+    examples: |
+      - Tạm biệt
+      - Tạm biệt bạn
+      - Tạm biệt bạn, hẹn gặp lại
+      - Chúc bạn một ngày tốt lành
+      - Chia tay
+      - Hẹn gặp lại
+      - Hẹn gặp lại bạn
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Take care
+      - Have a great day
+      - Farewell
+      - See you soon
+
+  - intent: cam_on
+    examples: |
+      - Cảm ơn
+      - Cảm ơn bạn
+      - Cảm ơn bạn rất nhiều
+      - Tôi cảm ơn
+      - Cảm ơn bạn đã giúp đỡ
+      - Cảm ơn bạn đã giúp đỡ tôi
+      - Cảm ơn bạn đã giúp đỡ tôi rất nhiều
+      - Cảm ơn bạn đã giúp đỡ tôi rất nhiều, tôi rất cảm kích
+      - Cảm ơn bạn đã giúp đỡ tôi rất nhiều, tôi rất cảm kích, tôi sẽ quay lại
+
+  - intent: thanks
+    examples: |
+      - Thank you
+      - Thanks a lot
+      - I appreciate it
+      - Thank you so much
+      - Many thanks
 
   - intent: muon_mua_hang
     examples: |
@@ -31,6 +73,8 @@ nlu:
       - mua đồ ăn
       - mua đồ uống
       - mua đồ ăn uống
+      - tôi muốn tìm kiếm sản phẩm
+      - tìm kiếm sản phẩm
 
   - intent: want_to_buy
     examples: |
@@ -41,23 +85,40 @@ nlu:
       - buy food
       - buy drink
       - buy food and drink
+      - I want to find product
+      - find product
 
   - intent: cung_cap_ten_san_pham
     examples: |
-      - tôi muốn mua [coca](ten_san_pham)
-      - tôi muốn mua [pepsi](ten_san_pham)
+      - tôi muốn mua [thịt bò](ten_san_pham)
       - tôi muốn mua [thịt heo](ten_san_pham)
       - tôi muốn mua [thịt cừu](ten_san_pham)
       - tôi muốn mua [nước mắm](ten_san_pham)
+      - tôi muốn mua [coca](ten_san_pham)
       - tôi muốn mua [kem](ten_san_pham)
+      - tôi muốn mua [pepsi](ten_san_pham)
+      - tôi muốn mua [kem đánh răng](ten_san_pham)
       - tôi muốn mua [mì gói](ten_san_pham)
-      - mua [coca](ten_san_pham)
-      - mua [pepsi](ten_san_pham)
+      - tôi muốn mua [nước](ten_san_pham)
+      - tôi muốn mua [mì hảo hảo](ten_san_pham)
+      - tôi muốn mua [nước ngọt](ten_san_pham)
+      - tôi muốn mua [nước tăng lực](ten_san_pham)
+      - tôi muốn mua [nước khoáng](ten_san_pham)
+      - tôi muốn mua [sprite](ten_san_pham)
+      - mua [thịt bò](ten_san_pham)
       - mua [thịt heo](ten_san_pham)
       - mua [thịt cừu](ten_san_pham)
       - mua [nước mắm](ten_san_pham)
+      - mua [coca](ten_san_pham)
       - mua [kem](ten_san_pham)
+      - mua [pepsi](ten_san_pham)
+      - mua [kem đánh răng](ten_san_pham)
       - mua [mì gói](ten_san_pham)
+      - mua [nước](ten_san_pham)
+      - mua [mì hảo hảo](ten_san_pham)
+      - mua [nước ngọt](ten_san_pham)
+      - mua [nước khoáng](ten_san_pham)
+      - mua [sprite](ten_san_pham)
 
   - intent: provide_product_name
     examples: |
@@ -75,3 +136,76 @@ nlu:
       - buy [fish sauce](ten_san_pham)
       - buy [ice cream](ten_san_pham)
       - buy [instant noodles](ten_san_pham)
+
+  - intent: tra_cuu_don_hang
+    examples: |
+      - tôi muốn tra cứu đơn hàng
+      - tra cứu đơn hàng
+      - tôi muốn tra cứu đơn hàng của tôi
+      - tôi chưa nhận được hàng
+      - tôi chưa nhận được đơn hàng
+      - tôi chưa nhận được đơn hàng của tôi
+      - tôi muốn huỷ đơn hàng
+      - huỷ đơn hàng
+      - chưa nhận được hàng
+
+  - intent: check_order
+    examples: |
+      - I want to check order
+      - check order
+      - I want to check my order
+      - I have not received the goods
+      - I have not received the order
+      - I have not received my order
+      - I want to cancel the order
+      - cancel order
+      - have not received goods
+      - not received goods
+
+  - intent: phone_number
+    examples: |
+      - [123456789](phone_number)
+      - [0987654321](phone_number)
+      - [+84123456789](phone_number)
+      - [(+84)123456789](phone_number)
+      - [(+84) 123456789](phone_number)
+      - [(+84) 12-345-6789](phone_number)
+      - [(+84) 12 345 6789](phone_number)
+      - [(+84) 123 456 789](phone_number)
+
+  - intent: cung_cap_sdt_tra_cuu_don_hang
+    examples: |
+      - số điện thoại [0123456789](phone_number)
+      - sđt [0123456789](phone_number)
+      - tra cứu đơn hàng với số điện thoại [0123456789](phone_number)
+      - tra cứu đơn hàng với sđt [0123456789](phone_number)
+      - tra cứu đơn hàng với số điện thoại [0123456789](phone_number)
+      - tra cứu đơn hàng [0123456789](phone_number)
+
+  - intent: provide_phone_number_to_check_order
+    examples: |
+      - phone number [0123456789](phone_number)
+      - phone [0123456789](phone_number)
+      - check order with phone number [0123456789](phone_number)
+      - check order with phone [0123456789](phone_number)
+      - check order with phone number [0123456789](phone_number)
+      - check order [0123456789](phone_number)
+      - [0123456789](phone_number)
+      - [0987654321](phone_number)
+      - [+84123456789](phone_number)
+
+  - intent: hoi_dia_chi
+    examples: |
+      - địa chỉ
+      - địa chỉ cửa hàng
+      - địa chỉ của cửa hàng
+      - địa chỉ của siêu thị
+      - địa chỉ siêu thị
+
+  - intent: question_address
+    examples: |
+      - address
+      - store address
+      - address of store
+      - address of supermarket
+      - supermarket address

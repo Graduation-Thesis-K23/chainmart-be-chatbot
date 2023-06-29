@@ -11,6 +11,8 @@ stories:
         entities:
           - ten_san_pham: "coca"
       - action: action_cung_cap_ten_san_pham
+      - intent: cam_on
+      - action: utter_cam_on
 
   - story: Process of finding products
     steps:
@@ -22,3 +24,27 @@ stories:
         entities:
           - ten_san_pham: "coca"
       - action: action_provide_product_name
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - story: tra cứu đơn hàng
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: tra_cuu_don_hang
+      - action: utter_tra_cuu_don_hang
+      - intent: cung_cap_sdt_tra_cuu_don_hang
+      - action: action_cung_cap_sdt_tra_cuu_don_hang
+      - intent: cam_on
+      - action: utter_cam_on
+
+  - story: check order
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: check_order
+      - action: utter_check_order
+      - intent: provide_phone_number_to_check_order
+      - action: action_provide_phone_number_to_check_order
+      - intent: thank_you
+      - action: utter_thank_you

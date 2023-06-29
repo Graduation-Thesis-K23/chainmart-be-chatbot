@@ -1,9 +1,11 @@
 version: "3.1"
 intents:
-  - cam_on
   - chao_hoi
   - hello
-
+  - tam_biet
+  - goodbye
+  - cam_on
+  - thank_you
   - muon_mua_hang:
       ignore_entities:
         - ten_san_pham
@@ -16,10 +18,21 @@ intents:
   - provide_product_name:
       use_entities:
         - ten_san_pham
+  - tra_cuu_don_hang
+  - check_order
+  - cung_cap_sdt_tra_cuu_don_hang:
+      use_entities:
+        - phone_number
+  - provide_phone_number_to_check_order:
+      use_entities:
+        - phone_number
+  - hoi_dia_chi
+  - question_address
 
 entities:
   - so_don_hang
   - ten_san_pham
+  - phone_number
 
 slots:
   so_don_hang:
@@ -36,11 +49,33 @@ slots:
       - type: from_entity
         entity: ten_san_pham
 
+  phone_number:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: phone_number
+
 responses:
   utter_chao_hoi:
     - text: Xin chào! Bạn cần tôi giúp gì hôm nay?
   utter_hello:
     - text: Hello! How can I help you today?
+
+  utter_tam_biet:
+    - text: Cảm ơn bạn đã sử dụng dịch vụ của chung tôi. Nếu bạn cần hỗ trợ gì thêm, hãy liên hệ với chúng tôi.
+    - text: Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi. Hãy liên hệ với chúng tôi nếu bạn cần hỗ trợ thêm.
+
+  utter_goodbye:
+    - text: Thank you for using our service. If you need any further assistance, please contact us.
+    - text: Thank you for using our service. Please contact us if you need any further assistance.
+
+  utter_cam_on:
+    - text: Không có gì. Chúng tôi rất vui khi được hỗ trợ bạn. Nếu bạn cần hỗ trợ gì thêm, hãy liên hệ với chúng tôi.
+    - text: Không có gì. Chúng tôi rất vui khi được hỗ trợ bạn. Hãy liên hệ với chúng tôi nếu bạn cần hỗ trợ thêm.
+
+  utter_thank_you:
+    - text: You're welcome. We are glad to assist you. Please contact us if you need any further assistance.
 
   utter_muon_mua_hang:
     - text: Bạn muốn mua hàng à? Vui lòng cung cấp tên sản phẩm bạn muốn mua.
@@ -52,6 +87,16 @@ responses:
   utter_provide_product_name:
     - text: Please provide the name of the product you want to buy.
 
+  utter_tra_cuu_don_hang:
+    - text: Vui lòng cung cấp số điện thoại bạn đã đặt hàng.
+  utter_check_order:
+    - text: Please provide the phone number you ordered.
+
+  utter_hoi_dia_chi:
+    - text: Địa chỉ cửa hàng của chúng tôi là 19 Nguyễn Hữu Thọ, P. Tân Phong, Q7, Hồ Chí Minh. 
+  utter_question_address:
+    - text: Our store address is 19 Nguyen Huu Tho, Tan Phong Ward, District 7, Ho Chi Minh City. 
+
   utter_mac_dinh:
     - text: Xin lỗi, tôi không hiểu ý bạn. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
   utter_default:
@@ -60,7 +105,9 @@ responses:
 actions:
   - action_cung_cap_ten_san_pham
   - action_provide_product_name
+  - action_cung_cap_sdt_tra_cuu_don_hang
+  - action_provide_phone_number_to_check_order
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

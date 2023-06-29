@@ -11,6 +11,26 @@ rules:
       - intent: hello
       - action: utter_hello
 
+  - rule: Tạm biệt
+    steps:
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - rule: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Cảm ơn
+    steps:
+      - intent: cam_on
+      - action: utter_cam_on
+
+  - rule: Thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
   - rule: Muốn mua hàng
     steps:
       - intent: muon_mua_hang
@@ -30,3 +50,33 @@ rules:
     steps:
       - intent: provide_product_name
       - action: action_provide_product_name
+
+  - rule: Tra cứu đơn hàng
+    steps:
+      - intent: tra_cuu_don_hang
+      - action: utter_tra_cuu_don_hang
+
+  - rule: Check order
+    steps:
+      - intent: check_order
+      - action: utter_check_order
+
+  - rule: Cung cấp số điện thoại tra cứu đơn
+    steps:
+      - intent: cung_cap_sdt_tra_cuu_don_hang
+      - action: action_cung_cap_sdt_tra_cuu_don_hang
+
+  - rule: Provide phone number to check order
+    steps:
+      - intent: provide_phone_number_to_check_order
+      - action: action_provide_phone_number_to_check_order
+
+  - rule: hỏi địa chỉ
+    steps:
+      - intent: hoi_dia_chi
+      - action: utter_hoi_dia_chi
+
+  - rule: ask address
+    steps:
+      - intent: question_address
+      - action: utter_question_address

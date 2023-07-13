@@ -11,6 +11,6 @@ COPY . /app
 
 USER 1001
 
-EXPOSE 5055
+EXPOSE 5005
 
 CMD ["run"]

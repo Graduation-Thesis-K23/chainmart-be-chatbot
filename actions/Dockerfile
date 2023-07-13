@@ -16,4 +16,4 @@ COPY . /app/actions
 # By best practices, don't run the code with root user
 USER 1001
 
-EXPOSE 5005
+EXPOSE 5055

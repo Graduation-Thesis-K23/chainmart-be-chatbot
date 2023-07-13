@@ -2,6 +2,12 @@ from aiohttp import web
 import socketio
 import requests
 from database import Database
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+RASA_SERVER = os.getenv('RASA_SERVER')
 
 messages = [
     "action_cung_cap_ten_san_pham",
@@ -124,7 +130,7 @@ def connect(sid, environ):
 @sio.event
 async def send(sid, data):
     response = requests.post(
-        "http://rasa:5005/webhooks/rest/webhook",
+        RASA_SERVER + "/webhooks/rest/webhook",
         json={"sender": sid, "message": data},
     ).json()
 

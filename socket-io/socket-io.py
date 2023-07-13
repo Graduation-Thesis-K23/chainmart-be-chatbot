@@ -9,7 +9,7 @@ load_dotenv()
 
 RASA_SERVER: str = os.getenv('RASA_SERVER') | "http://localhost:5005"
 
-print(RASA_SERVER)
+url = f"{RASA_SERVER}/webhooks/rest/webhook"
 
 messages = [
     "action_cung_cap_ten_san_pham",
@@ -132,7 +132,7 @@ def connect(sid, environ):
 @sio.event
 async def send(sid, data):
     response = requests.post(
-        "http://rasa:5005/webhooks/rest/webhook",
+        url,
             json={"sender": sid, "message": data},
     ).json()
 

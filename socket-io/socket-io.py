@@ -9,6 +9,8 @@ load_dotenv()
 
 RASA_SERVER = os.getenv('RASA_SERVER')
 
+print(RASA_SERVER)
+
 messages = [
     "action_cung_cap_ten_san_pham",
     "action_provide_product_name",

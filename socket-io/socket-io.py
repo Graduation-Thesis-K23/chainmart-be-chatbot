@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-RASA_SERVER: str = os.getenv('RASA_SERVER') | "http://localhost:5005"
+RASA_SERVER = str(os.getenv("rasa_uri"))
 
-url = f"{RASA_SERVER}/webhooks/rest/webhook"
+print(RASA_SERVER)
 
 messages = [
     "action_cung_cap_ten_san_pham",
@@ -132,10 +132,9 @@ def connect(sid, environ):
 @sio.event
 async def send(sid, data):
     response = requests.post(
-        url,
-            json={"sender": sid, "message": data},
+        RASA_SERVER,
+        json={"sender": sid, "message": data},
     ).json()
-
 
     if len(response) == 0:
         sio.emit(

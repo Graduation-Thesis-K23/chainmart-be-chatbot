@@ -3,9 +3,7 @@ FROM rasa/rasa:3.6.0-full
 
 WORKDIR /app
 
-
 USER root
-
 
 COPY . /app
 

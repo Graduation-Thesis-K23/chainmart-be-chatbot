@@ -1,15 +1,17 @@
 from aiohttp import web
 import socketio
 import requests
-from database import Database
+from database import Mongo
+from database import Postgres
 import os
 from dotenv import load_dotenv
+from unidecode import unidecode
 
 load_dotenv()
 
-RASA_SERVER = str(os.getenv("rasa_uri"))
+RASA_SERVER = str(os.getenv("RASA_URL"))
 
-print(RASA_SERVER)
+print('RASA SERVER: ', RASA_SERVER)
 
 messages = [
     "action_cung_cap_ten_san_pham",
@@ -23,8 +25,8 @@ app = web.Application()
 sio.attach(app)
 
 
-def executeQuery(query):
-    db = Database()
+def executeQueryPostgres(query):
+    db = Postgres()
     db.connect()
     cur = db.conn.cursor()
     cur.execute(query)
@@ -41,21 +43,37 @@ def executeQuery(query):
     return rows
 
 
+def executeQueryMongo(query, collection_name):
+    db = Mongo()
+    collection = db.database[collection_name]
+
+    result = collection.find(query)
+
+    rows = []
+
+    for r in result:
+        rows.append(r)
+    
+    # check if rows is empty
+    if len(rows) == 0:
+        return None
+
+    return rows
+
 def processMessage(text):
     actions = text.split("|")
     action = actions[0]
     keyword = actions[1]
     if action == "action_cung_cap_ten_san_pham":
-        # get product name with `text`
-        query = f"select name,price,slug from products where lower(name) like lower('%{keyword}%') limit 5;".format(
-            keyword=keyword
-        )
+        item = keyword.strip().lower()
+        query = { "name" : f"/.*{item}*./"}
 
         print(query)
 
-        result = executeQuery(query)
+        result = executeQueryMongo(query, "products")
 
         if result is None:
+            print('Result is None')
             return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
 
         result_nraw = []
@@ -64,13 +82,15 @@ def processMessage(text):
                 "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
             )
 
+        print('Result after query: ', result_nraw)
+
         return result_nraw
 
     if action == "action_cung_cap_sdt_tra_cuu_don_hang":
         # get order with `text`
         query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
 
-        result = executeQuery(query)
+        result = executeQueryPostgres(query)
 
         if result is None:
             return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
@@ -86,29 +106,33 @@ def processMessage(text):
         return result_nraw
 
     if action == "action_provide_product_name":
-        # get product name with `text`
-        query = f"select name,price,slug from products where lower(name) like lower('%{keyword}%') limit 5;".format(
-            keyword=keyword
-        )
+        if action == "action_cung_cap_ten_san_pham":
+            item = unidecode(keyword.strip().lower())
+            query = { "name" : f"/.*{item}*./"}
 
-        result = executeQuery(query)
+            print(query)
 
-        if result is None:
-            return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
+            result = executeQueryMongo(query, "products")
 
-        result_nraw = []
-        for r in result:
-            result_nraw.append(
-                "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
-            )
+            if result is None:
+                print('Result is None')
+                return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
 
-        return result
+            result_nraw = []
+            for r in result:
+                result_nraw.append(
+                    "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+                )
+
+            print('Result after query: ', result_nraw)
+
+            return result_nraw
 
     if action == "action_provide_phone_number_to_check_order":
         # get order with `text`
         query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
 
-        result = executeQuery(query)
+        result = executeQueryPostgres(query)
 
         if result is None:
             return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
@@ -131,6 +155,8 @@ def connect(sid, environ):
 
 @sio.event
 async def send(sid, data):
+    print("send ", sid)
+    print("message ", data)
     response = requests.post(
         RASA_SERVER,
         json={"sender": sid, "message": data},

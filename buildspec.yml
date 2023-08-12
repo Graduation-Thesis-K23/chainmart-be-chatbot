@@ -3,17 +3,17 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com
+    - aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com
   build:
     commands:
-      - docker build -t chainmart-chatbot-rasa .
-      - docker build -t chainmart-chatbot-action ./actions
-      - docker build -t chainmart-chatbot-socket.io ./socket-io
-      - docker tag chainmart-chatbot-rasa:latest 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
-      - docker tag chainmart-chatbot-action:latest 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
-      - docker tag chainmart-chatbot-socket.io:latest 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest
+    - docker build -t chainmart-chatbot-rasa .
+    - docker build -t chainmart-chatbot-action ./actions
+    - docker build -t chainmart-chatbot-socket.io ./socket-io
+    - docker tag chainmart-chatbot-rasa:latest 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
+    - docker tag chainmart-chatbot-action:latest 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
+    - docker tag chainmart-chatbot-socket.io:latest 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest
   post_build:
     commands:
-      - docker push 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
-      - docker push 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
-      - docker push 376597958889.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest
+    - docker push 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
+    - docker push 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
+    - docker push 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest

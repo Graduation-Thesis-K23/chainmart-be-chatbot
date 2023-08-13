@@ -1,17 +1,23 @@
 from aiohttp import web
 import socketio
 import requests
-from database import Mongo
-from database import Postgres
+
+# from database import Mongo
+# from database import Postgres
 import os
 from dotenv import load_dotenv
 from unidecode import unidecode
 
 load_dotenv()
 
-RASA_SERVER = str(os.getenv("RASA_URL"))
+# RASA_SERVER = str(os.getenv("RASA_URL"))
 
-print('RASA SERVER: ', RASA_SERVER)
+# print('RASA SERVER: ', RASA_SERVER)
+RASA_SERVER = str(os.getenv("rasa_uri"))
+CHAINMART_BE = str(os.getenv("chainmart_be"))
+
+print(RASA_SERVER)
+print(CHAINMART_BE)
 
 messages = [
     "action_cung_cap_ten_san_pham",
@@ -25,22 +31,22 @@ app = web.Application()
 sio.attach(app)
 
 
-def executeQueryPostgres(query):
-    db = Postgres()
-    db.connect()
-    cur = db.conn.cursor()
-    cur.execute(query)
+# def executeQueryPostgres(query):
+#     db = Postgres()
+#     db.connect()
+#     cur = db.conn.cursor()
+#     cur.execute(query)
 
-    rows = cur.fetchall()
+#     rows = cur.fetchall()
 
-    cur.close()
-    db.disconnect()
+#     cur.close()
+#     db.disconnect()
 
-    # check if rows is empty
-    if len(rows) == 0:
-        return None
+#     # check if rows is empty
+#     if len(rows) == 0:
+#         return None
 
-    return rows
+#     return rows
 
 
 def executeQueryMongo(query, collection_name):
@@ -53,99 +59,143 @@ def executeQueryMongo(query, collection_name):
 
     for r in result:
         rows.append(r)
-    
+
     # check if rows is empty
     if len(rows) == 0:
         return None
 
     return rows
 
+
 def processMessage(text):
     actions = text.split("|")
     action = actions[0]
     keyword = actions[1]
+
+    print(text)
+
     if action == "action_cung_cap_ten_san_pham":
-        item = keyword.strip().lower()
-        query = { "name" : f"/.*{item}*./"}
+        # item = keyword.strip().lower()
+        # query = { "name" : f"/.*{item}*./"}
+        # get product name with `text`
+        response = requests.get(CHAINMART_BE + "/api/products/search/" + keyword).json()
 
-        print(query)
-
-        result = executeQueryMongo(query, "products")
-
-        if result is None:
-            print('Result is None')
-            return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
-
-        result_nraw = []
-        for r in result:
-            result_nraw.append(
-                "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+        if len(response) == 0:
+            return dict(
+                type="text", text="Xin lỗi, chúng tôi không tìm thấy sản phẩm này."
             )
 
-        print('Result after query: ', result_nraw)
+        # result = executeQueryMongo(query, "products")
 
-        return result_nraw
+        # if result is None:
+        #     print('Result is None')
+        #     return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
+
+        # result_nraw = []
+        # for r in result:
+        #     result_nraw.append(
+        #         "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+        #     )
+
+        # print('Result after query: ', result_nraw)
+
+        # return result_nraw
+        result = []
+        for r in response:
+            result.append(
+                dict(
+                    name=r["name"],
+                    price=r["price"],
+                    slug=r["slug"],
+                    sale=r["sale"],
+                    image=r["images"][0],
+                )
+            )
+
+        return dict(type="search_product", products=result)
 
     if action == "action_cung_cap_sdt_tra_cuu_don_hang":
         # get order with `text`
-        query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
+        response = requests.get(CHAINMART_BE + "/api/orders/search/" + keyword).json()
 
-        result = executeQueryPostgres(query)
+        # result = executeQueryPostgres(query)
 
-        if result is None:
-            return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
+        if len(response) == 0:
+            return dict(
+                type="text",
+                text="Chúng tôi không tìm thấy đơn hàng với số điện thoại " + keyword,
+            )
 
-        result_nraw = []
-        for r in result:
-            result_nraw.append(
-                "Đơn hàng {id} được đặt bởi {phone} có trạng thái là {status}.".format(
-                    id=r[0], phone=r[1], status=r[2]
+        result = []
+        for r in response:
+            result.append(
+                dict(status=r["status"], total=r["total"], address=r["address"])
+            )
+
+        return dict(type="search_orders", orders=result)
+
+    if action == "action_provide_product_name":
+        # if action == "action_cung_cap_ten_san_pham":
+        #     item = unidecode(keyword.strip().lower())
+        #     query = { "name" : f"/.*{item}*./"}
+
+        #     print(query)
+
+        #     result = executeQueryMongo(query, "products")
+
+        #     if result is None:
+        #         print('Result is None')
+        #         return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
+
+        #     result_nraw = []
+        #     for r in result:
+        #         result_nraw.append(
+        #             "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
+        #         )
+
+        #     print('Result after query: ', result_nraw)
+
+        #     return result_nraw
+        # get product name with `text`
+        response = requests.get(CHAINMART_BE + "/api/products/search/" + keyword).json()
+
+        if len(response) == 0:
+            return dict(
+                type="text", text="Xin lỗi, chúng tôi không tìm thấy sản phẩm này."
+            )
+
+        result = []
+        for r in response:
+            result.append(
+                dict(
+                    name=r["name"],
+                    price=r["price"],
+                    slug=r["slug"],
+                    sale=r["sale"],
+                    image=r["images"][0],
                 )
             )
 
-        return result_nraw
-
-    if action == "action_provide_product_name":
-        if action == "action_cung_cap_ten_san_pham":
-            item = unidecode(keyword.strip().lower())
-            query = { "name" : f"/.*{item}*./"}
-
-            print(query)
-
-            result = executeQueryMongo(query, "products")
-
-            if result is None:
-                print('Result is None')
-                return ["Xin lỗi, chúng tôi không tìm thấy sản phẩm này."]
-
-            result_nraw = []
-            for r in result:
-                result_nraw.append(
-                    "Sản phẩm {name} có giá là {price}.".format(name=r[0], price=r[1])
-                )
-
-            print('Result after query: ', result_nraw)
-
-            return result_nraw
+        return dict(type="search_product", products=result)
 
     if action == "action_provide_phone_number_to_check_order":
         # get order with `text`
-        query = f"select id,user_id,status from orders limit 5;".format(keyword=keyword)
+        response = requests.get(CHAINMART_BE + "/api/orders/search/" + keyword).json()
 
-        result = executeQueryPostgres(query)
-
-        if result is None:
-            return ["Xin lỗi, chúng tôi không tìm thấy đơn hàng này."]
-
-        result_nraw = []
-        for r in result:
-            result_nraw.append(
-                "Đơn hàng {id} được đặt bởi {phone} có trạng thái là {status}.".format(
-                    id=r[0], phone=r[1], status=r[2]
-                )
+        # result = executeQueryPostgres(query)
+        if len(response) == 0:
+            return dict(
+                type="text",
+                text="Chúng tôi không tìm thấy đơn hàng với số điện thoại " + keyword,
             )
 
-        return result_nraw
+        result = []
+        for r in response:
+            result.append(
+                dict(status=r["status"], total=r["total"], address=r["address"])
+            )
+
+        return dict(type="search_orders", orders=result)
 
 
 @sio.event
@@ -165,7 +215,10 @@ async def send(sid, data):
     if len(response) == 0:
         sio.emit(
             "receive",
-            "Xin lỗi, chúng tôi không hiểu yêu cầu của bạn. Vui lòng liên hệ 0984526014 để gặp tư vấn viên.",
+            dict(
+                type="text",
+                text="Xin lỗi, chúng tôi không hiểu yêu cầu của bạn. Vui lòng liên hệ 0984526014 để gặp tư vấn viên.",
+            ),
             room=sid,
         )
         return
@@ -175,11 +228,10 @@ async def send(sid, data):
     if "|" in text:
         res = processMessage(text)
 
-        for e in res:
-            await sio.emit("receive", e, room=sid)
+        await sio.emit("receive", res, room=sid)
 
     else:
-        await sio.emit("receive", response[0]["text"], room=response[0]["recipient_id"])
+        await sio.emit("receive", dict(type="text", text=text), room=sid)
 
 
 @sio.event

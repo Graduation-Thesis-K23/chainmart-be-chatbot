@@ -48,25 +48,6 @@ sio.attach(app)
 
 #     return rows
 
-
-def executeQueryMongo(query, collection_name):
-    db = Mongo()
-    collection = db.database[collection_name]
-
-    result = collection.find(query)
-
-    rows = []
-
-    for r in result:
-        rows.append(r)
-
-    # check if rows is empty
-    if len(rows) == 0:
-        return None
-
-    return rows
-
-
 def processMessage(text):
     actions = text.split("|")
     action = actions[0]

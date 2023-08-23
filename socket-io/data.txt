@@ -1,0 +1,406 @@
+- tôi muốn mua [nước khoáng](ten_san_pham)
+- tôi đang tìm [nước ngọt](ten_san_pham)
+- cho tôi hỏi, bạn có thể tìm [nước tăng lực](ten_san_pham) giá tốt không?
+- tôi muốn mua [cà phê](ten_san_pham) để làm quà tặng
+- bạn có thể giúp tôi tìm [đồ ăn](ten_san_pham) online không?
+- tôi định mua [trái cây](ten_san_pham) nhưng không biết nên tìm ở đâu
+- tôi muốn tìm [hải sản](ten_san_pham) với giá hợp lý
+- cho tôi hỏi, ở đâu có bán [thực phẩm tươi sống](ten_san_pham)?
+- tôi muốn mua [thịt gà](ten_san_pham) online với giá rẻ
+- tôi muốn mua [sữa](ten_san_pham) cho bé
+- bạn có thể tìm [đồ uống](ten_san_pham) cho tôi được không?
+- tôi muốn mua [hoa quả](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn vặt](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ làm bánh](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ nướng](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ hấp](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ lạnh](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ hòa tan](ten_san_pham) giúp tôi
+- tôi định mua [đồ đông lạnh](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ hộp](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ đông lạnh](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ lạnh](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn nhẹ](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ngọt](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn tươi sống](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi muốn mua [đồ ăn](ten_san_pham) và muốn hỏi bạn nên mua ở đâu
+- xin hãy tìm [đồ ăn](ten_san_pham) giúp tôi
+- tôi định mua [đồ ăn](ten_san_pham) online nhưng không biết cách
+- bạn có thể cho tôi biết nơi bán [đồ ăn](ten_san_pham) giá rẻ không?
+- tôi muốn mua [đồ ăn](ten_san_pham) mà không biết nên tìm ở đâu
+- tôi muốn tìm [đồ ăn](ten_san_pham) với giá phải chăng
+- cho tôi hỏi, ở đâu có bán [đồ ăn](ten_san_pham) chất lượng?
+- tôi đang tìm kiếm [đồ ăn](ten_san_pham) giá tốt
+- tôi muốn tìm [đồ ăn](ten_san_pham) ở gần đây
+- tôi muốn mua [đồ ăn](ten_san_pham) online với giá rẻ
+- bạn có thể tìm [đồ ăn](ten_san_pham) cho tôi được không?
+- tôi muốn mua [đồ ăn](ten_san_pham) cho người thân của tôi
+- tôi cần mua [đồ ăn](ten_san_pham) nhưng không biết nên tìm ở đâu
+- xin hãy giúp tôi tìm [đồ ăn](ten_san_pham) giảm giá
+- tôi muốn tìm [đồ ăn](ten_san_pham) để mua nhưng không biết nên bắt đầu từ đâu
+- tôi đang muốn tìm [đồ ăn](ten_san_pham) với giá hợp lý
+- tôi cần tìm [nước đóng chai](ten_san_pham)
+- tôi cần mua [đồ ăn vặt](ten_san_pham)
+- cho tôi hỏi, ở đâu bán [nước trái cây](ten_san_pham) tươi ngon?
+- tôi muốn tìm [thực phẩm sấy khô](ten_san_pham)
+- tôi cần mua [mì ăn liền](ten_san_pham)
+- tôi đang tìm [đồ ăn nhẹ](ten_san_pham) cho bé
+- bạn có thể tìm [đồ ăn hộp](ten_san_pham) giúp tôi không?
+- tôi muốn mua [thực phẩm đóng gói](ten_san_pham) để dự trữ
+- tôi muốn tìm [đồ ăn tự nấu](ten_san_pham)
+- tôi cần mua [đồ ăn chay](ten_san_pham)
+- tôi muốn tìm [đồ ăn đông lạnh](ten_san_pham)
+- tôi muốn mua [đồ ăn nhanh](ten_san_pham) để tiện lợi
+- tôi cần tìm [đồ ăn hạt](ten_san_pham) cho bữa sáng
+- tôi muốn mua [đồ ăn tươi](ten_san_pham) để nấu ăn
+- tôi cần tìm [đồ ăn hộp](ten_san_pham) cho cơm trưa
+- tôi muốn mua [thịt nguội](ten_san_pham) để làm bánh mì kẹp
+- tôi muốn mua [đồ ăn không đường](ten_san_pham) cho người ốm
+- cho tôi hỏi, ở đâu có bán [sữa chua](ten_san_pham) tự nhiên?
+- tôi cần mua [đồ ăn ít calo](ten_san_pham) để giảm cân
+- tôi muốn mua [kẹo](ten_san_pham) làm quà
+- tôi đang tìm [đồ ăn không gluten](ten_san_pham) cho người dị ứng
+- bạn có thể tìm [đồ ăn hữu cơ](ten_san_pham) cho tôi không?
+- tôi muốn mua [đồ ăn chứa chất xơ](ten_san_pham) cho tiêu hóa tốt
+- tôi cần mua [đồ ăn giàu protein](ten_san_pham) cho luyện tập thể hình
+- tôi muốn mua [đồ ăn đóng hộp](ten_san_pham) để làm salad
+- tôi cần tìm [đồ ăn nguyên liệu](ten_san_pham) để nấu ăn tại nhà
+- tôi muốn mua [đồ ăn sấy khô](ten_san_pham) cho chuyến đi dã ngoại
+- tôi đang tìm [đồ ăn đóng gói](ten_san_pham) dành cho trẻ em
+- tôi muốn mua [đồ ăn đường phố](ten_san_pham) ngon miệng
+- tôi cần tìm [đồ ăn kiểm soát cân nặng](ten_san_pham) để duy trì vóc dáng
+- tôi muốn mua [đồ ăn nhanh chóng](ten_san_pham) cho bữa trưa
+- tôi muốn mua [đồ ăn đóng túi](ten_san_pham) tiện lợi cho công việc
+- tôi cần mua [đồ ăn không độc tố](ten_san_pham) để bảo vệ sức khỏe
+- tôi muốn mua [đồ ăn sữa](ten_san_pham) dành cho trẻ nhỏ
+- tôi muốn mua [đồ ăn hình thú](ten_san_pham) để dụ dỗ trẻ ăn
+- tôi muốn tìm [đồ ăn hải sản](ten_san_pham) tươi ngon
+- tôi muốn mua [đồ ăn hấp dẫn](ten_san_pham) để làm quà tặng
+- tôi cần tìm [đồ ăn nguyên chất](ten_san_pham) không chất bảo quản

@@ -2,28 +2,78 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-  - story: happy path 1
+  - story: Quá trình tìm kiếm sản phẩm
     steps:
       - user: |
-          hello there!
-        intent: greet
-      - action: utter_greet
+          Chào bạn
+        intent: chao_hoi
+      - action: utter_chao_hoi
       - user: |
-          amazing
-        intent: mood_great
-      - action: utter_happy
+          tôi muốn mua hàng
+        intent: muon_mua_hang
+      - action: utter_muon_mua_hang
+      - user: |
+          tôi muốn mua coca
+        intent: cung_cap_ten_san_pham
+        entities:
+          - ten_san_pham: "coca"
+      - action: action_cung_cap_ten_san_pham
+      - user: |
+          Cảm ơn
+        intent: cam_on
+      - action: utter_cam_on
+  
+  - story: Process of finding products
+    steps:
+      - user: |
+          Hello
+        intent: hello
+      - action: utter_hello
+      - user: |
+          I want to buy
+        intent: want_to_buy
+      - action: utter_want_to_buy
+      - user: |
+          buy coca
+        intent: provide_product_name
+        entities:
+          - ten_san_pham: "coca"
+      - action: action_provide_product_name
+      - user: |
+          Thank you
+        intent: thank_you
+      - action: utter_thank_you
 
-  - story: happy path 2
+  - story: tra cứu đơn hàng
     steps:
       - user: |
-          hello there!
-        intent: greet
-      - action: utter_greet
+          Chào bạn
+        intent: chao_hoi
+      - action: utter_chao_hoi
       - user: |
-          amazing
-        intent: mood_great
-      - action: utter_happy
+          Tôi muốn tra cứu đơn hàng
+        intent: tra_cuu_don_hang
+      - action: utter_tra_cuu_don_hang
       - user: |
-          bye-bye!
-        intent: goodbye
-      - action: utter_goodbye
+          Số điện thoại của tôi là 0123456789
+        intent: cung_cap_sdt_tra_cuu_don_hang
+      - action: action_cung_cap_sdt_tra_cuu_don_hang
+
+  - story: check order
+    steps:
+      - user: |
+          Hello
+        intent: hello
+      - action: utter_hello
+      - user: |
+          I want to check order
+        intent: check_order
+      - action: utter_check_order
+      - user: |
+          My phone number is 0123456789
+        intent: provide_phone_number_to_check_order
+      - action: action_provide_phone_number_to_check_order
+      - user: |
+          Thank you
+        intent: thank_you
+      - action: utter_thank_you

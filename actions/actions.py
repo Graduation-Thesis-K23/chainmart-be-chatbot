@@ -15,12 +15,8 @@ class CungCapTenSanPham(Action):
     ) -> List[Dict[Text, Any]]:
         ten_san_pham = tracker.get_slot("ten_san_pham")
 
-        print("action_cung_cap_ten_san_pham")
-
-        if (ten_san_pham is None):
-            return []
-        
-        print("ten_san_pham" + ten_san_pham)
+        print("tracker:", "action_cung_cap_ten_san_pham")
+        print("ten_san_pham:", ten_san_pham)
 
         dispatcher.utter_message(
             text=f"action_cung_cap_ten_san_pham|{ten_san_pham}".format(

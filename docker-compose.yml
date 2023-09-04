@@ -1,19 +1,19 @@
 version: '3.0'
 services:
   rasa:
-    image: 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
+    image: 701428285404.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-rasa:latest
     networks:
       - rasa-network
     depends_on:
       - action_server
 
   action_server:
-    image: 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
+    image: 701428285404.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-action:latest
     networks:
       - rasa-network
 
   socketio:
-    image: 429660533268.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest
+    image: 701428285404.dkr.ecr.ap-southeast-1.amazonaws.com/chainmart-chatbot-socket.io:latest
     ports:
       - 5000:5000
     networks:
